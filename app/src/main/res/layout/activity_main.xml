@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Txt"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Text you get From image will be stored here"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:onClick="showImageImportDialog"
+        android:text="Take a picture"
+
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Txt" />
+
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="12dp"
+        android:onClick="copyText"
+        android:text="Copy Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="200dp"
+        android:text="Made by: Duje Mandalinić"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/copy" />
+
+    <ImageView
+        android:id="@+id/IO"
+        android:layout_width="match_parent"
+
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"></ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
