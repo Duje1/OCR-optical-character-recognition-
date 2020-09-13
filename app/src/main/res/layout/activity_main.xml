@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".MainActivity">
 
     <EditText
@@ -26,7 +27,7 @@
         android:layout_height="76dp"
         android:onClick="showImageImportDialog"
         android:text="Take a picture"
-
+        android:background="#606766"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -39,6 +40,7 @@
         android:layout_height="74dp"
         android:layout_marginTop="12dp"
         android:onClick="copyText"
+        android:background="#606766"
         android:text="Copy Text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
